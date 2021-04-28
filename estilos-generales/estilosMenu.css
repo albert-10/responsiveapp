@@ -1,0 +1,85 @@
+#bannerSitio {
+    display: flex;
+}
+
+#barraNavegacion {
+    display: flex;
+}
+
+#menuNavegacion {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+}
+
+.elementoNavegacion{
+    flex: 25;
+    background: goldenrod;
+    display: flex;  
+    justify-content: center;  
+}
+
+.elementoNavegacion > a {
+    text-decoration: none;
+    color: rgba(0,0,0, 0.8);
+    font-weight: bold;
+}
+
+#acordeon{
+    background: goldenrod;
+    font-weight: bold;
+    color: rgba(0,0,0, 0.8);
+    justify-content: center;
+    cursor: pointer;    
+}
+
+.bordeMenuInferior{
+    border-bottom: 1px solid rgba(0,0,0, 0.6);
+}
+
+.bordeMenuSuperior{
+    border-top: 1px solid rgba(0,0,0, 0.6);
+}
+
+.bordeDerecho{
+    border-right: 1px solid rgba(0,0,0, 0.6);
+}
+
+@media screen and (min-width: 460px){
+    #menuNavegacion {
+        display: flex;
+    }
+
+    #acordeon {
+        display: none;
+    }
+
+    .elementoNavegacion:nth-child(1) {
+        border-right: 1px solid rgba(0,0,0, 0.6);
+    }
+
+    .elementoNavegacion:nth-child(2) {
+        border-right: 1px solid rgba(0,0,0, 0.6);
+    }
+
+}
+
+@media screen and (max-width: 460px){
+    #menuNavegacion {
+        display: block;
+    }
+
+    #acordeon {
+        display: flex;
+    }
+
+    .elementoNavegacion:nth-child(1) {
+        border-top: 1px solid rgba(0,0,0, 0.6);
+    }
+
+    .elementoNavegacion{
+        border-bottom: 1px solid rgba(0,0,0, 0.6);
+    }
+
+}

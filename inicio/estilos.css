@@ -1,25 +1,50 @@
+/* Para estilos generales */
 *{
     margin:0;
     padding:0;
 }
 
+/* Para estilos generales */
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 216px;
+}
+
 main{
     display: flex;
-    justify-content: space-evenly;
     width: 90%; 
     margin: 1% 5% 0% 5%;
 }
 
-#seccionPrincipal{
+/* Para estilos generales */
+
+footer{
     display: flex;
-    width: 50%;           
+    background-color: goldenrod;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    height: 2em;   
+    font-weight: bold; 
 }
 
-@media screen and (min-width: 460px){      
+
+@media screen and (min-width: 500px){     
     
-    #imagenPrincipal{    
-        max-width: 100%;
+    main{        
+        justify-content: space-evenly;       
     }
+    
+    #seccionPrincipal{
+        display: flex;
+        width: 50%;           
+    }
+    
+    /* #imagenPrincipal{    
+        max-width: 100%;
+    } */    
 
     #contenedorImagenes{
         display: flex;        
@@ -32,5 +57,36 @@ main{
     .imagenSecundaria{  
         width: 49%;        
     }   
+   
+}
+
+@media screen and (max-width: 500px){ 
+
+    main{
+        display: flex;        
+        flex-direction: column;
+        justify-content: space-between;
+        width: 90%; 
+        margin: 1% 5% 0% 5%;
+    }
+    
+    #seccionPrincipal{
+        display: flex;
+        margin-top: 1%;
+        margin-bottom: 1%;                                 
+    }    
+
+    #contenedorImagenes{
+        display: flex;        
+        height: 45%;
+        align-content: space-between;
+        justify-content: space-between;
+        flex-wrap: wrap;    
+    }
+
+    .imagenSecundaria{  
+        width: 49%; 
+        margin-bottom: 1%;       
+    }     
    
 }

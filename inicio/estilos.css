@@ -42,9 +42,9 @@ footer{
         width: 50%;           
     }
     
-    /* #imagenPrincipal{    
+    #imagenPrincipal{    
         max-width: 100%;
-    } */    
+    }    
 
     #contenedorImagenes{
         display: flex;        
@@ -74,7 +74,11 @@ footer{
         display: flex;
         margin-top: 1%;
         margin-bottom: 1%;                                 
-    }    
+    }   
+    
+    #imagenPrincipal{    
+        max-width: 100%;
+    }
 
     #contenedorImagenes{
         display: flex;        

@@ -26,9 +26,19 @@ th,td{
     text-align: center;
 } 
 
-/* th,td{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-} */
+@media (max-width: 850px) {
+    table {font-size: 1.8em;}
+}
+
+@media (max-width: 750px) {
+    table {font-size: 1.5em;}
+}
+
+@media (max-width: 650px) {
+    table {font-size: 1.2em;}
+}
+
+@media (max-width: 650px) {
+    table {font-size: 1em;}
+}
 

@@ -1,35 +1,8 @@
-/* Para estilos generales */
-*{
-    margin:0;
-    padding:0;
-}
-
-/* Para estilos generales */
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    min-width: 216px;
-}
-
 main{
     display: flex;
     width: 90%; 
     margin: 1% 5% 0% 5%;
 }
-
-/* Para estilos generales */
-
-footer{
-    display: flex;
-    background-color: goldenrod;
-    margin-top: auto;
-    justify-content: center;
-    align-items: center;
-    height: 2em;   
-    font-weight: bold; 
-}
-
 
 @media screen and (min-width: 500px){     
     

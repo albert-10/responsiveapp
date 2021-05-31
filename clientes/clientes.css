@@ -2,6 +2,15 @@
     margin:0;
     padding: 0;
 }
+
+#seccionImagen{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+
+
 h1{
     display: flex;
     justify-content: center;

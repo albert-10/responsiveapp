@@ -23,6 +23,7 @@ table{
     border-collapse: collapse;
     border: 1px solid;
     font-size: 2em;
+    min-width: 460px
 }
 
 tr,th,td{
@@ -48,4 +49,3 @@ th,td{
 @media (max-width: 650px) {
     table {font-size: 1em;}
 }
-

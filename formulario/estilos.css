@@ -111,6 +111,13 @@ aside{
     text-align: center;
 }
 
+.opiniones {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font: bold 1em Arial;
+}
+
 /* Sobrescribiendo los estilos generales para el footer */
 
 footer {

@@ -1,0 +1,88 @@
+.contenedor{    
+    margin: auto;
+    align-self: center;
+    width: 50%;
+    max-height: 70vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 'main  main  acciones'
+                         'main  main  acciones'
+                         'main  main  acciones'
+                         'opiniones   opiniones  acciones'
+}
+
+form {
+    background: rgb(248, 178, 215);;
+    grid-area: main;
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));    
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: stretch;
+    align-items: center;
+    grid-template-areas: 'nombre nombre apellidos apellidos'
+                         'telefono telefono email email' 
+                         'direccion direccion direccion direccion'
+                         'vacio vacio enviar cancelar' 
+}
+
+#nombre{
+    grid-area: nombre;  
+    margin-left: 5px; 
+}
+
+#apellidos{
+    grid-area: apellidos;
+    margin-right: 5px;
+}
+
+#telefono{
+    grid-area: telefono;
+    margin-left: 5px;    
+}
+
+#email{
+    grid-area: email;
+    margin-right: 5px;
+    
+}
+
+#direccion{
+    grid-area: direccion;
+    justify-self: normal;
+}
+
+#enviar{
+    grid-area: enviar;
+    justify-self: stretch;
+    text-align: center;
+}
+
+#cancelar{
+    grid-area: cancelar;
+    justify-self: stretch;
+    margin-right: 5px;
+    text-align: center;
+}
+
+aside {
+    background: rgb(112, 195, 223);
+    grid-area: acciones;
+}
+
+.opiniones{
+    background: rgb(148, 216, 148);
+    grid-area: opiniones;
+}
+
+textarea{
+    resize: none;
+}
+
+/* Sobrescribiendo los estilos generales para el footer */
+
+footer {
+    margin-top: 0;
+}

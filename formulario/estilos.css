@@ -45,8 +45,7 @@ form {
 
 #email{
     grid-area: email;
-    margin-right: 5px;
-    
+    margin-right: 5px;    
 }
 
 #direccion{
@@ -122,4 +121,146 @@ aside{
 
 footer {
     margin-top: 0;
+}
+
+@media screen and (max-width: 1140px) {
+
+    .contenedor{
+        grid-template-columns: 1fr 1fr 0.5fr;
+    }
+
+    aside{
+        font-size: 0.8em;
+    }
+    /* .contenedor{     
+        max-height: 80vh;           
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 'main  main'
+                             'main  main'
+                             'main  main'
+                             'acciones acciones'
+                             'opiniones  opiniones'
+    }
+
+    aside{
+        display: grid;
+        grid-template-rows: 5fr;
+        grid-template-columns: repeat(5, 1fr);        
+        justify-items: center;
+        row-gap: 1px;
+    }
+
+    
+
+   .habitacion{        
+        display: flex;
+        flex: 20;
+    } */
+}
+
+@media screen and (max-width: 1113px) {
+     .contenedor{     
+        max-height: 80vh; 
+        width: 60%;          
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 'main  main'
+                             'main  main'
+                             'main  main'
+                             'acciones acciones'
+                             'opiniones  opiniones'
+    }
+
+    aside{
+        display: grid;
+        grid-template-rows: 5fr;
+        grid-template-columns: repeat(5, 1fr);        
+        justify-items: center;
+        row-gap: 1px;
+        column-gap: 0.9px;
+        font-size: 0.8em;
+
+    }
+    
+
+   .habitacion{        
+        display: flex;
+        flex: 20;
+        
+    }
+}
+
+@media screen and (max-width: 897px) {
+    .contenedor{     
+       max-height: 80vh; 
+       width: 90%;          
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(5, 1fr);
+       grid-template-areas: 'main  main'
+                            'main  main'
+                            'main  main'
+                            'acciones acciones'
+                            'opiniones  opiniones'
+   }
+
+   aside{
+       display: grid;
+       grid-template-rows: 5fr;
+       grid-template-columns: repeat(5, 1fr);        
+       justify-items: center;
+       row-gap: 1px;
+       column-gap: 0.9px;
+       font-size: 0.7em;
+
+   }
+   
+
+  .habitacion{        
+       display: flex;
+       flex: 20;
+       
+   }
+
+}
+
+   @media screen and (max-width: 529px) {
+    .contenedor{     
+       max-height: 80vh; 
+       width: 100%;          
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(5, 1fr);
+       grid-template-areas: 'main  main'
+                            'main  main'
+                            'main  main'
+                            'acciones acciones'
+                            'opiniones  opiniones'
+   }
+
+   aside{
+       display: grid;
+       grid-template-rows: 5fr;
+       grid-template-columns: repeat(5, 1fr);        
+       justify-items: center;
+       row-gap: 1px;
+       column-gap: 0.9px;
+       
+       
+
+   }
+
+   aside h3{
+    font-size: 0.8em;
+   }
+   
+
+  .habitacion{        
+       display: flex;
+       align-content: space-between;
+       flex: 20;       
+   }
+
+   .habitacionInfo {
+        flex-direction: column;  
+}
 }

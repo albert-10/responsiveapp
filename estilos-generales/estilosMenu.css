@@ -24,8 +24,8 @@
 .elementoNavegacion{
     flex: 25;
     background: goldenrod;
-    display: flex;  
-    justify-content: center;  
+    display: flex;
+    justify-content: center; 
 }
 
 .elementoNavegacion > a {
